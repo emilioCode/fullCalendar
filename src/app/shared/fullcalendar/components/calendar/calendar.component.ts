@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { FullCalendarModule } from '@fullcalendar/angular';
+import { Component } from '@angular/core';
+import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
 
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css']
 })
-export class CalendarComponent implements OnInit {
+export class CalendarComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth'
+  };
 
 }

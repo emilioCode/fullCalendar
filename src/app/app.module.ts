@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { FullcalendarModule } from './shared/fullcalendar/fullcalendar.module';
+import { FullCalendarSharedModule } from './shared/fullcalendar/fullcalendarshared.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { FullcalendarModule } from './shared/fullcalendar/fullcalendar.module';
   ],
   imports: [
     BrowserModule,
-    FullcalendarModule
+    FullCalendarSharedModule //the own shared module
   ],
   providers: [],
   bootstrap: [AppComponent]
